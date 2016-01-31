@@ -1,16 +1,17 @@
 package connected;
 
 public class IsConnected {
+	
 	static boolean[] visited;
 
 	public static boolean isConnected(int[][] ad) {
 	
-		visited = new boolean[ad.length];
+		visited = new boolean[ad.length];	//build the Flag array
 		
 		dfs(ad, 0);
 		
 		for (int i = 0; i < ad.length; i++) {
-			if (visited[i] != true) return false;
+			if (visited[i] != true) return false;	
 		}
 		return true;
 	}
@@ -20,7 +21,7 @@ public class IsConnected {
 	
 		for (int i = 0; i < ad.length; i++) {
 			if (ad[i][s] == 1 && !visited[i]) {
-				dfs(ad, i);
+				dfs(ad, i);	//swap [column][row]
 			}
 		}
 	}

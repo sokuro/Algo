@@ -24,11 +24,11 @@ public class TreeHeap {
 			Locator rightChild = t.rightChild(node);
 		
 			if (leftChild != null) {
-				list.add((2*position)+1, leftChild);
+				list.add((2*position), leftChild);
 				allElements(t, leftChild, (2*position));
 			}
 			if (rightChild != null) {
-				list.add((2*position)+2, rightChild);
+				list.add((2*position)+1, rightChild);
 				allElements(t, rightChild, (2*position)+1);
 			}
 		}

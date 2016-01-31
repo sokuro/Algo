@@ -1,23 +1,27 @@
 package Nodes;
 
-public class BTree {
-
-	public Locator root() {
+public class BTreePosition {
+	
+	public Position root() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Locator leftChild(Locator node) {
+	public Position leftChild(Position node) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Locator rightChild(Locator node) {
+	public Position rightChild(Position node) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public void remove(Position p) {
+		
+	}
 
-	public boolean isExternal(Locator node) {
+	public boolean isExternal(Position node) {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -31,7 +35,4 @@ public class BTree {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
-	
-
 }
